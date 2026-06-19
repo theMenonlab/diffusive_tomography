@@ -1,0 +1,58 @@
+{
+  "_comment_training": "Configuration for model training",
+  "training": {
+    "num_layers": 16,
+    "num_epochs": 200,
+    "learning_rate": 0.005,
+    "scatter": 0.5,
+    "use_lr_scheduler": false
+  },
+  
+  "_comment_image_processing": "Image size and processing parameters",
+  "image_processing": {
+    "image_size": 608,
+    "input_pad": 20,
+    "disp_pos": 4,
+    "num_channels": 3
+  },
+  
+  "_comment_physical": "Physical dimensions and properties",
+  "physical_parameters": {
+    "img_x_um": 1772,
+    "sample_z_um": 1000
+  },
+  
+  "_comment_light_source": "Light source positioning and properties", 
+  "light_source": {
+    "z_depth_mm": 4,
+    "right_to_left": true,
+    "light_step": 0.22,
+    "center_image": null,
+    "y_position": null,
+    "intensity_mode": "gaussian",
+    "NA": 0.3,
+    "blur_sigma": 50
+  },
+  
+  "_comment_data_paths": "Input and output directory paths",
+  "data_paths": {
+    "folder_path": "/home/al/Documents/Motion_Detector/20250827_fungus",
+    "output_base_path": "/home/al/Documents/Motion_Detector/output_fungus"
+  },
+  
+  "_comment_image_cropping": "Crop boundaries and transformations",
+  "image_cropping": {
+    "left": 900,
+    "top": 700,
+    "right": 2100,
+    "bottom": 1900,
+    "target_size": [608, 608],
+    "rotation_degrees": 0,
+    "rotate_90_left": true
+  },
+  
+  "_comment_interface": "User interface settings",
+  "interface": {
+    "use_gui_default": false
+  }
+}
