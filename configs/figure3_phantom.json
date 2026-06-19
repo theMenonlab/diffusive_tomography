@@ -1,0 +1,57 @@
+{
+  "_comment_training": "Configuration for model training",
+  "training": {
+    "num_layers": 16,
+    "num_epochs": 50,
+    "learning_rate": 0.005,
+    "scatter": 0.5
+  },
+  
+  "_comment_image_processing": "Image size and processing parameters",
+  "image_processing": {
+    "image_size": 608,
+    "input_pad": 20,
+    "disp_pos": 4,
+    "num_channels": 3
+  },
+  
+  "_comment_physical": "Physical dimensions and properties",
+  "physical_parameters": {
+    "img_x_um": 1330,
+    "sample_z_um": 240
+  },
+  
+  "_comment_light_source": "Light source positioning and properties", 
+  "light_source": {
+    "z_depth_mm": 4,
+    "right_to_left": true,
+    "light_step": 0.1,
+    "center_image": 10,
+    "y_position": 230,
+    "intensity_mode": "gaussian",
+    "NA": 0.39,
+    "blur_sigma": 50
+  },
+  
+  "_comment_data_paths": "Input and output directory paths",
+  "data_paths": {
+    "folder_path": "20250813_transmission_thick_phantom/png/best",
+    "output_base_path": "/home/al/Documents/Motion_Detector/output"
+  },
+  
+  "_comment_image_cropping": "Crop boundaries and transformations",
+  "image_cropping": {
+    "left": 1400,
+    "top": 1400,
+    "right": 2300,
+    "bottom": 2300,
+    "target_size": [608, 608],
+    "rotation_degrees": -5,
+    "rotate_90_left": false
+  },
+  
+  "_comment_interface": "User interface settings",
+  "interface": {
+    "use_gui_default": true
+  }
+}
